@@ -20,10 +20,9 @@ body {
   position: relative;
 }
 
-.slider li,
-ul {
-  width: 100%;
-}
+/* .slider li, ul{
+	width: 100%;
+} */
 
 .slider li {
   overflow: hidden;
@@ -52,7 +51,7 @@ ul {
 }
 
 .slider .caption h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .slider .caption p {
@@ -99,13 +98,19 @@ ul {
   right: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1058px) {
+  .slider .caption h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .slider .caption p {
     display: none;
   }
 
   .slider .caption h1 {
-    font-size: 35px;
+    font-size: 100%;
   }
 
   .left,
@@ -114,7 +119,7 @@ ul {
   }
 
   .slider li img {
-    width: 600px;
+    width: 100%;
   }
 
   .pagination {

@@ -273,7 +273,9 @@
       type="text/css"
       media="all"
     />
-    <link rel="stylesheet" href="wp-content/plugins/sliders/estilos.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
     <link
       rel="stylesheet"
       id="zion-frontend-css"
@@ -373,6 +375,8 @@
       src="https://kit.fontawesome.com/16776d0da2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
 
     <script type="text/javascript">
       /* <![CDATA[ */
@@ -579,58 +583,6 @@
       name="generator"
       content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."
     />
-    <script type="text/javascript">
-      function setREVStartSize(e) {
-        try {
-          e.c = jQuery(e.c);
-          var i = jQuery(window).width(),
-            t = 9999,
-            r = 0,
-            n = 0,
-            l = 0,
-            f = 0,
-            s = 0,
-            h = 0;
-          if (
-            (e.responsiveLevels &&
-              (jQuery.each(e.responsiveLevels, function (e, f) {
-                f > i && ((t = r = f), (l = e)),
-                  i > f && f > r && ((r = f), (n = e));
-              }),
-              t > r && (l = n)),
-            (f = e.gridheight[l] || e.gridheight[0] || e.gridheight),
-            (s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth),
-            (h = i / s),
-            (h = h > 1 ? 1 : h),
-            (f = Math.round(h * f)),
-            "fullscreen" == e.sliderLayout)
-          ) {
-            var u = (e.c.width(), jQuery(window).height());
-            if (void 0 != e.fullScreenOffsetContainer) {
-              var c = e.fullScreenOffsetContainer.split(",");
-              if (c)
-                jQuery.each(c, function (e, i) {
-                  u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u;
-                }),
-                  e.fullScreenOffset.split("%").length > 1 &&
-                  void 0 != e.fullScreenOffset &&
-                  e.fullScreenOffset.length > 0
-                    ? (u -=
-                        (jQuery(window).height() *
-                          parseInt(e.fullScreenOffset, 0)) /
-                        100)
-                    : void 0 != e.fullScreenOffset &&
-                      e.fullScreenOffset.length > 0 &&
-                      (u -= parseInt(e.fullScreenOffset, 0));
-            }
-            f = u;
-          } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
-          e.c.closest(".rev_slider_wrapper").css({ height: f });
-        } catch (d) {
-          console.log("Failure at Presize of Slider:" + d);
-        }
-      }
-    </script>
   </head>
 
   <body
@@ -690,8 +642,7 @@
                         <li class="topnav-li social-icons-li">
                           <a
                             href="#"
-                            target="_blank"
-                            class="topnav-item social-icons-item scheader-icon- fab fa-instagram"
+                            class="social-icons-item fab fa-instagram"
                             title="Instagram"
                           ></a>
                           <span class="sr-only">Instagram</span>
@@ -817,40 +768,49 @@
       >
         <div
           class="kl-slideshow 0 kl-revolution-slider portfolio_devices eluid00b6f68e maskcontainer--mask8 mask8s"
-        >
-          <div class="container-all">
-            <input type="radio" id="1" name="image-slide" hidden />
-            <input type="radio" id="2" name="image-slide" hidden />
-            <input type="radio" id="3" name="image-slide" hidden />
+        ></div>
+        <div class="slideshow">
+          <ul class="slider">
+            <li>
+              <img src="Images/Mesa de trabajo 9POST4.png" alt="" />
+              <section class="caption">
+                <h1>
+                  SERVICIO BÁSICO,CONFORTABLE Y <br />
+                  SEGURO A SU DESTINO
+                </h1>
+              </section>
+            </li>
+            <li>
+              <img src="Images/Mesa de trabajo 9POST5.png" alt="" />
+              <section class="caption">
+                <h1>ENVÍO DE ENCOMIENDAS Y GIROS A NIVEL NACIONAL</h1>
+              </section>
+            </li>
+            <li>
+              <img src="Images/Mesa de trabajo 9POST54.png" alt="" />
+              <section class="caption">
+                <h1>
+                  NUESTRA EMPRESA CUENTA CON SERVICIOS<br />
+                  DE ACUERDO A SU NECESIDAD<br />
+                  TENIENDO SIEMPRE EN CUENTA LA SEGURIDAD CORRESPONDIENTE
+                </h1>
+              </section>
+            </li>
+          </ul>
 
-            <div class="slide">
-              <div class="item-slide">
-                <img src="Images/Mesa de trabajo 9POST4.png" />
-              </div>
+          <ol class="pagination"></ol>
 
-              <div class="item-slide">
-                <img src="Images/Mesa de trabajo 9POST5.png" />
-              </div>
-
-              <div class="item-slide">
-                <img src="Images/Mesa de trabajo 9POST54.png" />
-              </div>
-            </div>
-
-            <div class="pagination">
-              <label class="pagination-item" for="1">
-                <img src="Images/Mesa de trabajo 9POST4.png" />
-              </label>
-
-              <label class="pagination-item" for="2">
-                <img src="Images/Mesa de trabajo 9POST5.png" />
-              </label>
-
-              <label class="pagination-item" for="3">
-                <img src="Images/Mesa de trabajo 9POST54.png" />
-              </label>
-            </div>
+          <div class="left">
+            <span class="fa fa-chevron-left"></span>
           </div>
+
+          <div class="right">
+            <span class="fa fa-chevron-right"></span>
+          </div>
+          <div
+            class="zn-bgSource-overlay"
+            style="background-color: rgba(29, 31, 64, 0.8)"
+          ></div>
         </div>
         <section
           class="zn_section eluida5b0781b section-sidemargins section--no"
@@ -1362,8 +1322,8 @@
                         <div class="kl-iconbox__icon-wrapper">
                           <span
                             class="kl-iconbox__icon kl-iconbox__icon--"
-                            data-zniconfam="icomoon"
-                            data-zn_icon=""
+                            data-zniconfam="glyphicons_halflingsregular"
+                            data-zn_icon=""
                           ></span>
                         </div>
                         <!-- /.kl-iconbox__icon-wrapper -->
@@ -1376,14 +1336,16 @@
                               class="kl-iconbox__title element-scheme__hdg1"
                               itemprop="headline"
                             >
-                              TRANSPORTE A NIVEL NACIONAL
+                              PUNTUALIDAD
                             </h3>
                           </div>
                           <div
                             class="kl-iconbox__el-wrapper kl-iconbox__desc-wrapper"
                           >
                             <p class="kl-iconbox__desc">
-                              ENVÍO DE ENCOMIENDAS Y GIROS A NIVEL NACIONAL
+                              Nos preocupamos siendo muy estrictos en lo que nos
+                              comprometemos, siendo la puntualidad nuestra
+                              principal meta.
                             </p>
                           </div>
                         </div>
@@ -1402,6 +1364,57 @@
               >
                 <div
                   class="znColumnElement-innerWrapper-eluid05aa42fd znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div
+                      class="kl-iconbox eluid29c2b4c7 kl-iconbox--type-icon kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light"
+                      id="eluid29c2b4c7"
+                    >
+                      <div class="kl-iconbox__inner clearfix">
+                        <div class="kl-iconbox__icon-wrapper">
+                          <span
+                            class="kl-iconbox__icon kl-iconbox__icon--"
+                            data-zniconfam="icomoon"
+                            data-zn_icon=""
+                          ></span>
+                        </div>
+                        <!-- /.kl-iconbox__icon-wrapper -->
+
+                        <div class="kl-iconbox__content-wrapper">
+                          <div
+                            class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper"
+                          >
+                            <h3
+                              class="kl-iconbox__title element-scheme__hdg1"
+                              itemprop="headline"
+                            >
+                              TRANSPORTES A NIVEL NACIONAL
+                            </h3>
+                          </div>
+                          <div
+                            class="kl-iconbox__el-wrapper kl-iconbox__desc-wrapper"
+                          >
+                            <p class="kl-iconbox__desc">
+                              Realizamos transportes de todo tipo de cargamento
+                              a nivel nacional.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- /.kl-iconbox__content-wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="eluid91edb4f7 zn-animateInViewport zn-anim-fadeIn zn-anim-duration--1000 col-md-3 col-sm-6 znColumnElement"
+                data-anim-delay="700ms"
+                data-anim-delay="700ms"
+                id="eluid91edb4f7"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluid91edb4f7 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
                 >
                   <div class="znColumnElement-innerContent">
                     <div
@@ -1426,7 +1439,7 @@
                               class="kl-iconbox__title element-scheme__hdg1"
                               itemprop="headline"
                             >
-                              TECNOLOGÍA DE PUNTA
+                              TECNOLOGÍA DE VANGUARDIA
                             </h3>
                           </div>
                           <div
@@ -1435,57 +1448,6 @@
                             <p class="kl-iconbox__desc">
                               Contamos con una flota moderna, implementada con
                               tecnología de punta.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- /.kl-iconbox__content-wrapper -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="eluid91edb4f7 zn-animateInViewport zn-anim-fadeIn zn-anim-duration--1000 col-md-3 col-sm-6 znColumnElement"
-                data-anim-delay="700ms"
-                data-anim-delay="700ms"
-                id="eluid91edb4f7"
-              >
-                <div
-                  class="znColumnElement-innerWrapper-eluid91edb4f7 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
-                >
-                  <div class="znColumnElement-innerContent">
-                    <div
-                      class="kl-iconbox eluid29c2b4c7 kl-iconbox--type-icon kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light"
-                      id="eluid29c2b4c7"
-                    >
-                      <div class="kl-iconbox__inner clearfix">
-                        <div class="kl-iconbox__icon-wrapper">
-                          <span
-                            class="kl-iconbox__icon kl-iconbox__icon--"
-                            data-zniconfam="icomoon"
-                            data-zn_icon=""
-                          ></span>
-                        </div>
-                        <!-- /.kl-iconbox__icon-wrapper -->
-
-                        <div class="kl-iconbox__content-wrapper">
-                          <div
-                            class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper"
-                          >
-                            <h3
-                              class="kl-iconbox__title element-scheme__hdg1"
-                              itemprop="headline"
-                            >
-                              TIEMPOS DE ENTREGA
-                            </h3>
-                          </div>
-                          <div
-                            class="kl-iconbox__el-wrapper kl-iconbox__desc-wrapper"
-                          >
-                            <p class="kl-iconbox__desc">
-                              Nos caracterizamos por cumplir con los tiempos de
-                              entrega acordados.
                             </p>
                           </div>
                         </div>
