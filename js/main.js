@@ -61,4 +61,54 @@ $(document).ready(function(){
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
 	}
 
+	$("#zn-form-button").on("click", function() {
+		var A = $("#zn_form_field_nombre_o_razon_social1_0").val();
+		var B = $("#zn_form_field_asunto1_1").val();
+		var C = $("#zn_form_field_e_mail1_2").val();
+		var D = $("#zn_form_field_telefono1_3").val();
+		var E = $("#zn_form_field_mensaje1_4").val();
+		var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+		if(A == ""){
+			alert("Ingrese un nombre o razón social");
+		}
+		else {
+			if (B == ""){
+			alert("Ingrese un asunto");
+		} else {
+			if (C == "" || !expr.test(C)){
+				alert("Ingrese un correo válido");
+			} else {
+				if (D == ""){
+					alert("Ingrese un telefono");
+				} else {
+					if (E == ""){
+						alert("Ingrese un mensaje");
+					}else{
+						$("#zn-form-button").prop('disabled', true);
+						Email.send({
+							SecureToken: "dbea0bdd-fb0a-4d3a-a034-b480f7de5727",
+							To : 'servicios@transrayval.com',
+							From : "TransRayvalNoReply@gmail.com",
+							Subject : B,
+							Body : 'Nombre o Razón Social: '+A+'<br>Correo: '+C+'<br>Telefono: '+D+'<br>Mensaje: '+E
+							}).then( function (message){
+								if(message == "OK"){
+									alert("Su mensaje ha sido enviado.\nNos pondremos pronto en contacto con usted")
+									$("#zn_form_field_nombre_o_razon_social1_0").val("");
+									$("#zn_form_field_asunto1_1").val("");
+									$("#zn_form_field_e_mail1_2").val("");
+									$("#zn_form_field_telefono1_3").val("");
+									$("#zn_form_field_mensaje1_4").val("");
+									$("#zn-form-button").prop('disabled', false);
+								}else{
+									alert("Su mensaje no pudo ser enviado,vuelva a intentarlo más tarde")
+									$("#zn-form-button").prop('disabled', false);
+								}								
+							});
+					}
+				}
+			}
+		}
+	}
+	});
 });

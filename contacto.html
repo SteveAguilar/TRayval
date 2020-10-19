@@ -646,36 +646,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-
-    <!--[if lte IE 8]>
-      <script type="text/javascript">
-        var $buoop = {
-          vs: { i: 10, f: 25, o: 12.1, s: 7, n: 9 },
-        };
-
-        $buoop.ol = window.onload;
-
-        window.onload = function () {
-          try {
-            if ($buoop.ol) {
-              $buoop.ol();
-            }
-          } catch (e) {}
-
-          var e = document.createElement("script");
-          e.setAttribute("type", "text/javascript");
-          e.setAttribute("src", "https://browser-update.org/update.js");
-          document.body.appendChild(e);
-        };
-      </script>
-    <![endif]-->
-
-    <!-- for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Fallback for animating in viewport -->
     <noscript>
       <style type="text/css" media="screen">
         .zn-animateInViewport {
@@ -753,6 +723,9 @@
         }
       }
     </script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js"></script>
   </head>
 
   <body
@@ -1177,9 +1150,7 @@
                         </p>
                       </div>
                       <form
-                        action="#"
-                        id="form_eluid62480fe3"
-                        method="post"
+                        id=""
                         class="zn_contact_form contact_form cf-elm-form row"
                         data-redirect=""
                       >
@@ -1204,7 +1175,7 @@
                           <input
                             type="text"
                             name="zn_form_field_email1_1"
-                            id="zn_form_field_email1_1"
+                            id="zn_form_field_e_mail1_2"
                             value=""
                             class="zn_form_input zn-field-text form-control kl-fancy-form-input zn_validate_is_email"
                           /><label
@@ -1219,7 +1190,7 @@
                           <input
                             type="text"
                             name="zn_form_field_telefono_1_2"
-                            id="zn_form_field_telefono_1_2"
+                            id="zn_form_field_telefono1_3"
                             value=""
                             class="zn_form_input zn-field-text form-control kl-fancy-form-input zn_validate_is_numeric"
                           /><label
@@ -1234,7 +1205,7 @@
                           <input
                             type="text"
                             name="zn_form_field_asunto1_3"
-                            id="zn_form_field_asunto1_3"
+                            id="zn_form_field_asunto1_1"
                             value=""
                             class="zn_form_input zn-field-text form-control kl-fancy-form-input zn_validate_not_empty"
                           /><label
@@ -1278,7 +1249,8 @@
                           <div class="zn_submit_container text-center">
                             <button
                               class="zn_contact_submit btn btn-fullcolor btn--square btn-md"
-                              type="submit"
+                              type="button"
+                              id="zn-form-button"
                             >
                               Enviar mensaje
                             </button>
@@ -1649,10 +1621,6 @@
       var ZnSmoothScroll = { type: "0.25", touchpadSupport: "no" };
       /* ]]> */
     </script>
-    <script
-      type="text/javascript"
-      src="wp-content/themes/kallyas/js/znscript.min.js?ver=4.16.7"
-    ></script>
     <script
       type="text/javascript"
       src="wp-content/themes/kallyas/addons/smooth_scroll/SmoothScroll.min.js?ver=4.16.7"
