@@ -86,7 +86,7 @@ $(document).ready(function(){
 					}else{
 						$("#zn-form-button").prop('disabled', true);
 						Email.send({
-							SecureToken: "dbea0bdd-fb0a-4d3a-a034-b480f7de5727",
+							SecureToken: "cba442f6-853f-4962-a308-b6555da1fccf",
 							To : 'servicios@transrayval.com',
 							From : "TransRayvalNoReply@gmail.com",
 							Subject : B,
