@@ -1,694 +1,1470 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8"/>
-<meta name="twitter:widgets:csp" content="on"/>
-<link rel="profile" href="http://gmpg.org/xfn/11"/>
-<link rel="pingback" href="xmlrpc.php"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="twitter:widgets:csp" content="on" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.php" />
 
-<title>Servicios &#8211; Transportes Rayval</title>
-<link rel='dns-prefetch' href='https://fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Transportes Rayval &raquo; Feed" href="feed/" />
-<link rel="alternate" type="application/rss+xml" title="Transportes Rayval &raquo; RSS de los comentarios" href="comments/feed/" />
-<link rel='stylesheet' id='zn_all_g_fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%7CMontserrat%3Aregular%2C700&#038;ver=5.2.7' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css?ver=5.2.7' type='text/css' media='all' />
-<link rel='stylesheet' id='bbp-default-css'  href='wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.14-6684' type='text/css' media='screen' />
-<link rel='stylesheet' id='bookly-intlTelInput-css'  href='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/intlTelInput.css?ver=14.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bookly-ladda-min-css'  href='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/ladda.min.css?ver=14.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bookly-picker-css'  href='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/picker.classic.css?ver=14.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bookly-picker-date-css'  href='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/picker.classic.date.css?ver=14.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bookly-main-css'  href='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/bookly-main.css?ver=14.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bookly-customer-profile-css'  href='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/modules/customer_profile/resources/css/customer_profile.css?ver=14.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpcdt-public-css-css'  href='wp-content/plugins/countdown-timer-ultimate/assets/css/wpcdt-timecircles.css?ver=1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css'  href='wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8' type='text/css' media='all' />
-<style id='rs-plugin-settings-inline-css' type='text/css'>
+    <title>Servicios &#8211; Transportes Rayval</title>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Transportes Rayval &raquo; Feed"
+      href="feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Transportes Rayval &raquo; RSS de los comentarios"
+      href="comments/feed/"
+    />
+    <link
+      rel="stylesheet"
+      id="zn_all_g_fonts-css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%7CMontserrat%3Aregular%2C700&#038;ver=5.2.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="wp-includes/css/dist/block-library/style.min.css?ver=5.2.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bbp-default-css"
+      href="wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.14-6684"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      id="bookly-intlTelInput-css"
+      href="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/intlTelInput.css?ver=14.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bookly-ladda-min-css"
+      href="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/ladda.min.css?ver=14.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bookly-picker-css"
+      href="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/picker.classic.css?ver=14.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bookly-picker-date-css"
+      href="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/picker.classic.date.css?ver=14.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bookly-main-css"
+      href="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/css/bookly-main.css?ver=14.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bookly-customer-profile-css"
+      href="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/modules/customer_profile/resources/css/customer_profile.css?ver=14.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpcdt-public-css-css"
+      href="wp-content/plugins/countdown-timer-ultimate/assets/css/wpcdt-timecircles.css?ver=1.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="rs-plugin-settings-css"
+      href="wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8"
+      type="text/css"
+      media="all"
+    />
+    <style id="rs-plugin-settings-inline-css" type="text/css"></style>
+    <link
+      rel="stylesheet"
+      id="woo-lucky-wheel-google-font-open+sans-css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&#038;ver=5.2.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woo-lucky-wheel-frontend-style-css"
+      href="wp-content/plugins/woo-lucky-wheel/css/woo-lucky-wheel.css?ver=1.0.4.5"
+      type="text/css"
+      media="all"
+    />
+    <style id="woo-lucky-wheel-frontend-style-inline-css" type="text/css">
+      .lucky_wheel_content {
+        background-color: #37567b;
+      }
+      .wheel_icon {
+        bottom: 5px;
+        right: 5px;
+        margin-right: -100%;
+      }
+      .wlwl_pointer:before {
+        color: #f85858;
+      }
+      .wheel_content_right > .wlwl_user_lucky > .wlwl_spin_button {
+        color: #000000;
+        background-color: #ffbe10;
+      }
+      .lucky_wheel_content > .wheel-content-wrapper > .wheel_content_right,
+      .lucky_wheel_content
+        > .wheel-content-wrapper
+        > .wheel_content_right
+        input,
+      .lucky_wheel_content > .wheel-content-wrapper > .wheel_content_right span,
+      .lucky_wheel_content > .wheel-content-wrapper > .wheel_content_right a,
+      .lucky_wheel_content
+        > .wheel-content-wrapper
+        > .wheel_content_right
+        > .wlwl-frontend-result {
+        font-family: Open Sans !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="woocommerce-layout-css"
+      href="wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.5.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-smallscreen-css"
+      href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.5.2"
+      type="text/css"
+      media="only screen and (max-width: 767px)"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-general-css"
+      href="wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.5.2"
+      type="text/css"
+      media="all"
+    />
+    <style id="woocommerce-inline-inline-css" type="text/css">
+      .woocommerce form .form-row .required {
+        visibility: visible;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="ecwd-popup-style-css"
+      href="wp-content/plugins/event-calendar-wd/css/ecwd_popup.css?ver=1.1.23_5c0ac1665ab44"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ecwd_font-awesome-css"
+      href="wp-content/plugins/event-calendar-wd/css/font-awesome/font-awesome.css?ver=1.1.23_5c0ac1665ab44"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ecwd-public-css"
+      href="wp-content/plugins/event-calendar-wd/css/style.css?ver=1.1.23_5c0ac1665ab44"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="plhg-main-css-css"
+      href="wp-content/plugins/hogash-post-love/assets/frontend/css/plhg-styles.css?ver=1.0.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="yith-infs-style-css"
+      href="wp-content/plugins/yith-infinite-scrolling/assets/css/frontend.css?ver=1.1.3"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpcm_css_frontend-css"
+      href="wp-content/plugins/wp-car-manager/assets/css/frontend.css?ver=1.4.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woo-variation-swatches-css"
+      href="wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css?ver=1.0.49"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woo-variation-swatches-theme-override-css"
+      href="wp-content/plugins/woo-variation-swatches/assets/css/wvs-theme-override.min.css?ver=1.0.49"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woo-variation-swatches-tooltip-css"
+      href="wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.0.49"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="kallyas-styles-css"
+      href="wp-content/themes/kallyas/style.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="th-bootstrap-styles-css"
+      href="wp-content/themes/kallyas/css/bootstrap.min.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="th-theme-template-styles-css"
+      href="wp-content/themes/kallyas/css/template.min.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-overrides-css"
+      href="wp-content/themes/kallyas/css/plugins/kl-woocommerce.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bbpress-overrides-css"
+      href="wp-content/themes/kallyas/css/plugins/kl-bbpress.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ecwd-overrides-css"
+      href="wp-content/themes/kallyas/css/plugins/kl-calendar.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="zion-frontend-css"
+      href="wp-content/themes/kallyas/framework/zion-builder/assets/css/znb_frontend.css?ver=1.0.22"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="472-layout.css-css"
+      href="wp-content/uploads/zion-builder/cache/472-layout.css?ver=3fef16838fee1a0dc68c288284919ca4"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="animate.css-css"
+      href="wp-content/themes/kallyas/css/vendors/animate.min.css?ver=4.16.7"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="th-theme-print-stylesheet-css"
+      href="wp-content/themes/kallyas/css/print.css?ver=4.16.7"
+      type="text/css"
+      media="print"
+    />
+    <link
+      rel="stylesheet"
+      id="th-theme-options-styles-css"
+      href="wp-content/uploads/zn_dynamic.css?ver=1546990011"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpdevelop-bts-css"
+      href="wp-content/plugins/booking/assets/libs/bootstrap/css/bootstrap.css?ver=3.3.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpdevelop-bts-theme-css"
+      href="wp-content/plugins/booking/assets/libs/bootstrap/css/bootstrap-theme.css?ver=3.3.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpbc-client-pages-css"
+      href="wp-content/plugins/booking/css/client.css?ver=8.4.3"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpbc-admin-timeline-css"
+      href="wp-content/plugins/booking/css/timeline.css?ver=8.4.3"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpbc-calendar-css"
+      href="wp-content/plugins/booking/css/calendar.css?ver=8.4.3"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpbc-calendar-skin-css"
+      href="wp-content/plugins/booking/css/skins/traditional.css?ver=8.4.3"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/spin.min.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/ladda.min.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/hammer.min.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/jquery.hammer.min.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/picker.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/picker.date.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/intlTelInput.min.js?ver=14.5.1"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/16776d0da2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var BooklyL10n = {
+        csrf_token: "ae5b3c96b4",
+        today: "Hoy",
+        months: [
+          "enero",
+          "febrero",
+          "marzo",
+          "abril",
+          "mayo",
+          "junio",
+          "julio",
+          "agosto",
+          "septiembre",
+          "octubre",
+          "noviembre",
+          "diciembre",
+        ],
+        days: [
+          "domingo",
+          "lunes",
+          "martes",
+          "mi\u00e9rcoles",
+          "jueves",
+          "viernes",
+          "s\u00e1bado",
+        ],
+        daysShort: ["dom", "lun", "mar", "mi\u00e9", "jue", "vie", "s\u00e1b"],
+        nextMonth: "El mes que viene",
+        prevMonth: "El mes anterior",
+        show_more: "Mostrar m\u00e1s",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/bookly.js?ver=14.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/modules/customer_profile/resources/js/customer_profile.js?ver=14.5.1"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var pWhoisAjax = {
+        ajaxurl: "https:\/\/\/wp-admin\/admin-ajax.php",
+        enter_domain: "Please enter Domain",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/powies-whois/pwhois.js?ver=5.2.7"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var _wlwl_get_email_params = {
+        ajaxurl: "https:\/\/\/wp-admin\/admin-ajax.php",
+        pointer_position: "center",
+        wheel_center_color: "#ffffff",
+        gdpr: "off",
+        gdpr_warning: "Please agree with our term and condition.",
+        position: "bottom-right",
+        show_again: "12",
+        show_again_unit: "h",
+        intent: "popup_icon",
+        hide_popup: "off",
+        slice_text_color: "#fff",
+        bg_color: [
+          "#919191",
+          "#27be9b",
+          "#919191",
+          "#27be9b",
+          "#919191",
+          "#27be9b",
+        ],
+        label: [
+          "Not Lucky",
+          "10% OFF",
+          "Not Lucky",
+          "&#163;20.00 OFF",
+          "Not Lucky",
+          "&#163;30.00 OFF",
+        ],
+        coupon_type: [
+          "non",
+          "percent",
+          "non",
+          "fixed_product",
+          "non",
+          "fixed_cart",
+        ],
+        spinning_time: "8",
+        auto_close: "0",
+        show_wheel: "10",
+        time_if_close: "3600",
+        emty_email_warning: "*Please enter your email",
+        invalid_email_warning: "*Please enter a valid email address",
+        limit_time_warning: "You can only spin 1 time every 12 hours",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woo-lucky-wheel/js/woo-lucky-wheel.js?ver=1.0.4.5"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var plhg_script_vars = {
+        ajaxurl: "https:\/\/\/wp-admin\/admin-ajax.php",
+        nonce: "f73a161258",
+        error_message: "Sorry, there was a problem processing your request.",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/hogash-post-love/assets/frontend/js/script.js?ver=1.0.0"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var wpbc_global1 = {
+        wpbc_ajaxurl: "https:\/\/\/wp-admin\/admin-ajax.php",
+        wpdev_bk_plugin_url: "https:\/\/\/wp-content\/plugins\/booking",
+        wpdev_bk_today: "[2020,10,10,3,46]",
+        visible_booking_id_on_page: "[]",
+        booking_max_monthes_in_calendar: "1y",
+        user_unavilable_days: "[999]",
+        wpdev_bk_edit_id_hash: "",
+        wpdev_bk_plugin_filename: "wpdev-booking.php",
+        bk_days_selection_mode: "multiple",
+        wpdev_bk_personal: "0",
+        block_some_dates_from_today: "0",
+        message_verif_requred: "Este campo es obligatorio",
+        message_verif_requred_for_check_box: "Esta casilla debe estar marcada",
+        message_verif_requred_for_radio_box:
+          "Seleccione al menos una opci\u00f3n",
+        message_verif_emeil: "Campo de email incorrecto",
+        message_verif_same_emeil: "Tus correos no coinciden",
+        message_verif_selectdts:
+          "Por favor, seleccione la fecha de reserva en el calendario.",
+        parent_booking_resources: "[]",
+        new_booking_title:
+          "Gracias por su reserva online.  Le enviaremos la confirmaci\u00f3n de su reserva lo antes posible.",
+        new_booking_title_time: "7000",
+        type_of_thank_you_message: "message",
+        thank_you_page_URL: "https:\/\/\/thank-you",
+        is_am_pm_inside_time: "true",
+        is_booking_used_check_in_out_time: "false",
+        wpbc_active_locale: "es_ES",
+        wpbc_message_processing: "Procesando",
+        wpbc_message_deleting: "Borrando",
+        wpbc_message_updating: "Actualizando",
+        wpbc_message_saving: "Guardando",
+        message_checkinouttime_error:
+          "\u00a1Error! Por favor reinicie las fechas de Check-in\/Check-out de arriba.",
+        message_starttime_error:
+          "Fecha de inicio no v\u00e1lida, probablemente por fecha u hora ya reservada, o ya en el pasado! Escoja otra fecha u hora.",
+        message_endtime_error:
+          "Fecha fin no v\u00e1lida, probablemente por fecha u hora ya reservada o ya en el pasado! La hora final puede ser anterior a la de inicio, si s\u00f3lo se ha seleccionado 1 d\u00eda. Escoja otra fecha u hora.",
+        message_rangetime_error:
+          "La hora puede estar reservada o tambi\u00e9n que ya haya pasado!",
+        message_durationtime_error:
+          "La hora puede estar reservada o tambi\u00e9n que ya haya pasado!",
+        bk_highlight_timeslot_word: "Times:",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/booking/assets/libs/bootstrap/js/bootstrap.js?ver=3.3.5.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/kallyas/js/znscript.min.js?ver=4.16.7"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/booking/js/datepick/jquery.datepick.js?ver=1.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/booking/js/datepick/jquery.datepick-es.js?ver=1.1"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/booking/js/client.js?ver=8.4.3"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/booking/js/wpbc_times.js?ver=8.4.3"
+    ></script>
+    <link rel="https://api.w.org/" href="wp-json/" />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="xmlrpc.php?rsd"
+    />
+    <link
+      rel="wlwmanifest"
+      type="application/wlwmanifest+xml"
+      href="wp-includes/wlwmanifest.xml"
+    />
+    <meta name="generator" content="WordPress 5.2.7" />
+    <meta name="generator" content="WooCommerce 3.5.2" />
+    <link rel="canonical" href="servicios.html" />
+    <link rel="shortlink" href="?p=472" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fservicios%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fservicios%2F&#038;format=xml"
+    />
+  </head>
 
-</style>
-<link rel='stylesheet' id='woo-lucky-wheel-google-font-open+sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&#038;ver=5.2.7' type='text/css' media='all' />
-<link rel='stylesheet' id='woo-lucky-wheel-frontend-style-css'  href='wp-content/plugins/woo-lucky-wheel/css/woo-lucky-wheel.css?ver=1.0.4.5' type='text/css' media='all' />
-<style id='woo-lucky-wheel-frontend-style-inline-css' type='text/css'>
-.lucky_wheel_content {background-color:#37567b;}.wheel_icon{bottom:5px;right:5px;margin-right: -100%;}.wlwl_pointer:before{color:#f85858;}.wheel_content_right>.wlwl_user_lucky>.wlwl_spin_button{color:#000000;background-color:#ffbe10;}.lucky_wheel_content>.wheel-content-wrapper>.wheel_content_right,.lucky_wheel_content>.wheel-content-wrapper>.wheel_content_right input,.lucky_wheel_content>.wheel-content-wrapper>.wheel_content_right span,.lucky_wheel_content>.wheel-content-wrapper>.wheel_content_right a,.lucky_wheel_content>.wheel-content-wrapper>.wheel_content_right>.wlwl-frontend-result{font-family:Open Sans!important;}
-</style>
-<link rel='stylesheet' id='woocommerce-layout-css'  href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.5.2' type='text/css' media='all' />
-<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.5.2' type='text/css' media='only screen and (max-width: 767px)' />
-<link rel='stylesheet' id='woocommerce-general-css'  href='wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.5.2' type='text/css' media='all' />
-<style id='woocommerce-inline-inline-css' type='text/css'>
-.woocommerce form .form-row .required { visibility: visible; }
-</style>
-<link rel='stylesheet' id='ecwd-popup-style-css'  href='wp-content/plugins/event-calendar-wd/css/ecwd_popup.css?ver=1.1.23_5c0ac1665ab44' type='text/css' media='all' />
-<link rel='stylesheet' id='ecwd_font-awesome-css'  href='wp-content/plugins/event-calendar-wd/css/font-awesome/font-awesome.css?ver=1.1.23_5c0ac1665ab44' type='text/css' media='all' />
-<link rel='stylesheet' id='ecwd-public-css'  href='wp-content/plugins/event-calendar-wd/css/style.css?ver=1.1.23_5c0ac1665ab44' type='text/css' media='all' />
-<link rel='stylesheet' id='plhg-main-css-css'  href='wp-content/plugins/hogash-post-love/assets/frontend/css/plhg-styles.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='yith-infs-style-css'  href='wp-content/plugins/yith-infinite-scrolling/assets/css/frontend.css?ver=1.1.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpcm_css_frontend-css'  href='wp-content/plugins/wp-car-manager/assets/css/frontend.css?ver=1.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='woo-variation-swatches-css'  href='wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css?ver=1.0.49' type='text/css' media='all' />
-<link rel='stylesheet' id='woo-variation-swatches-theme-override-css'  href='wp-content/plugins/woo-variation-swatches/assets/css/wvs-theme-override.min.css?ver=1.0.49' type='text/css' media='all' />
-<link rel='stylesheet' id='woo-variation-swatches-tooltip-css'  href='wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.0.49' type='text/css' media='all' />
-<link rel='stylesheet' id='kallyas-styles-css'  href='wp-content/themes/kallyas/style.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='th-bootstrap-styles-css'  href='wp-content/themes/kallyas/css/bootstrap.min.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='th-theme-template-styles-css'  href='wp-content/themes/kallyas/css/template.min.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='woocommerce-overrides-css'  href='wp-content/themes/kallyas/css/plugins/kl-woocommerce.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='bbpress-overrides-css'  href='wp-content/themes/kallyas/css/plugins/kl-bbpress.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='ecwd-overrides-css'  href='wp-content/themes/kallyas/css/plugins/kl-calendar.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='zion-frontend-css'  href='wp-content/themes/kallyas/framework/zion-builder/assets/css/znb_frontend.css?ver=1.0.22' type='text/css' media='all' />
-<link rel='stylesheet' id='472-layout.css-css'  href='wp-content/uploads/zion-builder/cache/472-layout.css?ver=3fef16838fee1a0dc68c288284919ca4' type='text/css' media='all' />
-<link rel='stylesheet' id='animate.css-css'  href='wp-content/themes/kallyas/css/vendors/animate.min.css?ver=4.16.7' type='text/css' media='all' />
-<link rel='stylesheet' id='th-theme-print-stylesheet-css'  href='wp-content/themes/kallyas/css/print.css?ver=4.16.7' type='text/css' media='print' />
-<link rel='stylesheet' id='th-theme-options-styles-css'  href='wp-content/uploads/zn_dynamic.css?ver=1546990011' type='text/css' media='all' />
-<link rel='stylesheet' id='wpdevelop-bts-css'  href='wp-content/plugins/booking/assets/libs/bootstrap/css/bootstrap.css?ver=3.3.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpdevelop-bts-theme-css'  href='wp-content/plugins/booking/assets/libs/bootstrap/css/bootstrap-theme.css?ver=3.3.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpbc-client-pages-css'  href='wp-content/plugins/booking/css/client.css?ver=8.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpbc-admin-timeline-css'  href='wp-content/plugins/booking/css/timeline.css?ver=8.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpbc-calendar-css'  href='wp-content/plugins/booking/css/calendar.css?ver=8.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpbc-calendar-skin-css'  href='wp-content/plugins/booking/css/skins/traditional.css?ver=8.4.3' type='text/css' media='all' />
-<script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/spin.min.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/ladda.min.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/hammer.min.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/jquery.hammer.min.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/picker.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/picker.date.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/intlTelInput.min.js?ver=14.5.1'></script>
-<script
-src="https://kit.fontawesome.com/16776d0da2.js"
-crossorigin="anonymous"
-></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var BooklyL10n = {"csrf_token":"ae5b3c96b4","today":"Hoy","months":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"days":["domingo","lunes","martes","mi\u00e9rcoles","jueves","viernes","s\u00e1bado"],"daysShort":["dom","lun","mar","mi\u00e9","jue","vie","s\u00e1b"],"nextMonth":"El mes que viene","prevMonth":"El mes anterior","show_more":"Mostrar m\u00e1s"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/resources/js/bookly.js?ver=14.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/bookly-responsive-appointment-booking-tool/frontend/modules/customer_profile/resources/js/customer_profile.js?ver=14.5.1'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var pWhoisAjax = {"ajaxurl":"https:\/\/\/wp-admin\/admin-ajax.php","enter_domain":"Please enter Domain"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/powies-whois/pwhois.js?ver=5.2.7'></script>
-<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8'></script>
-<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wlwl_get_email_params = {"ajaxurl":"https:\/\/\/wp-admin\/admin-ajax.php","pointer_position":"center","wheel_center_color":"#ffffff","gdpr":"off","gdpr_warning":"Please agree with our term and condition.","position":"bottom-right","show_again":"12","show_again_unit":"h","intent":"popup_icon","hide_popup":"off","slice_text_color":"#fff","bg_color":["#919191","#27be9b","#919191","#27be9b","#919191","#27be9b"],"label":["Not Lucky","10% OFF","Not Lucky","&#163;20.00 OFF","Not Lucky","&#163;30.00 OFF"],"coupon_type":["non","percent","non","fixed_product","non","fixed_cart"],"spinning_time":"8","auto_close":"0","show_wheel":"10","time_if_close":"3600","emty_email_warning":"*Please enter your email","invalid_email_warning":"*Please enter a valid email address","limit_time_warning":"You can only spin 1 time every 12 hours"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/woo-lucky-wheel/js/woo-lucky-wheel.js?ver=1.0.4.5'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var plhg_script_vars = {"ajaxurl":"https:\/\/\/wp-admin\/admin-ajax.php","nonce":"f73a161258","error_message":"Sorry, there was a problem processing your request."};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/hogash-post-love/assets/frontend/js/script.js?ver=1.0.0'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wpbc_global1 = {"wpbc_ajaxurl":"https:\/\/\/wp-admin\/admin-ajax.php","wpdev_bk_plugin_url":"https:\/\/\/wp-content\/plugins\/booking","wpdev_bk_today":"[2020,10,10,3,46]","visible_booking_id_on_page":"[]","booking_max_monthes_in_calendar":"1y","user_unavilable_days":"[999]","wpdev_bk_edit_id_hash":"","wpdev_bk_plugin_filename":"wpdev-booking.php","bk_days_selection_mode":"multiple","wpdev_bk_personal":"0","block_some_dates_from_today":"0","message_verif_requred":"Este campo es obligatorio","message_verif_requred_for_check_box":"Esta casilla debe estar marcada","message_verif_requred_for_radio_box":"Seleccione al menos una opci\u00f3n","message_verif_emeil":"Campo de email incorrecto","message_verif_same_emeil":"Tus correos no coinciden","message_verif_selectdts":"Por favor, seleccione la fecha de reserva en el calendario.","parent_booking_resources":"[]","new_booking_title":"Gracias por su reserva online.  Le enviaremos la confirmaci\u00f3n de su reserva lo antes posible.","new_booking_title_time":"7000","type_of_thank_you_message":"message","thank_you_page_URL":"https:\/\/\/thank-you","is_am_pm_inside_time":"true","is_booking_used_check_in_out_time":"false","wpbc_active_locale":"es_ES","wpbc_message_processing":"Procesando","wpbc_message_deleting":"Borrando","wpbc_message_updating":"Actualizando","wpbc_message_saving":"Guardando","message_checkinouttime_error":"\u00a1Error! Por favor reinicie las fechas de Check-in\/Check-out de arriba.","message_starttime_error":"Fecha de inicio no v\u00e1lida, probablemente por fecha u hora ya reservada, o ya en el pasado! Escoja otra fecha u hora.","message_endtime_error":"Fecha fin no v\u00e1lida, probablemente por fecha u hora ya reservada o ya en el pasado! La hora final puede ser anterior a la de inicio, si s\u00f3lo se ha seleccionado 1 d\u00eda. Escoja otra fecha u hora.","message_rangetime_error":"La hora puede estar reservada o tambi\u00e9n que ya haya pasado!","message_durationtime_error":"La hora puede estar reservada o tambi\u00e9n que ya haya pasado!","bk_highlight_timeslot_word":"Times:"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/booking/assets/libs/bootstrap/js/bootstrap.js?ver=3.3.5.1'></script>
-<script type='text/javascript' src='wp-content/plugins/booking/js/datepick/jquery.datepick.js?ver=1.1'></script>
-<script type='text/javascript' src='wp-content/plugins/booking/js/datepick/jquery.datepick-es.js?ver=1.1'></script>
-<script type='text/javascript' src='wp-content/plugins/booking/js/client.js?ver=8.4.3'></script>
-<script type='text/javascript' src='wp-content/plugins/booking/js/wpbc_times.js?ver=8.4.3'></script>
-<link rel='https://api.w.org/' href='wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 5.2.7" />
-<meta name="generator" content="WooCommerce 3.5.2" />
-<link rel="canonical" href="servicios.html" />
-<link rel='shortlink' href='?p=472' />
-<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fservicios%2F" />
-<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fservicios%2F&#038;format=xml" />
-</head>
+  <body
+    class="page-template-default page page-id-472 woocommerce-no-js ecwd-theme-kallyas woo-variation-swatches woo-variation-swatches-theme-kallyas woo-variation-swatches-theme-child-kallyas woo-variation-swatches-style-squared woo-variation-swatches-attribute-behavior-blur woo-variation-swatches-tooltip-enabled woo-variation-swatches-stylesheet-enabled kl-skin--light ecwd-kallyas"
+    itemscope="itemscope"
+    itemtype="https://schema.org/WebPage"
+  >
+    <div class="login_register_stuff"></div>
+    <!-- end login register stuff -->
+    <div id="fb-root"></div>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-<body  class="page-template-default page page-id-472 woocommerce-no-js ecwd-theme-kallyas woo-variation-swatches woo-variation-swatches-theme-kallyas woo-variation-swatches-theme-child-kallyas woo-variation-swatches-style-squared woo-variation-swatches-attribute-behavior-blur woo-variation-swatches-tooltip-enabled woo-variation-swatches-stylesheet-enabled kl-skin--light ecwd-kallyas" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
-
-
-<div class="login_register_stuff"></div><!-- end login register stuff -->		<div id="fb-root"></div>
-		<script>(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "https://connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-		
-
-<div id="page_wrapper">
-
-<header id="header" class="site-header  style4    header--no-stick headerstyle-xs--image_color  sticky-resize headerstyle--image_color site-header--absolute nav-th--light siteheader-classic siteheader-classic-normal sheader-sh--light"  >
-		<div class="site-header-wrapper sticky-top-area">
-
-		<div class="kl-top-header site-header-main-wrapper clearfix   sh--light">
-
-			<div class="container siteheader-container header--oldstyles">
-
-				<div class="fxb-row fxb-row-col-sm">
-
-										<div class='fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto fxb-grow-0'>
-								<div id="logo-container" class="logo-container   logosize--yes zn-original-logo">
-			<!-- Logo -->
-			<h3 class='site-logo logo ' id='logo'><a href='' class='site-logo-anch'><img class="logo-img site-logo-img" src="Images/Mesa de trabajo 7POST2.png"  alt="Transportes Rayval" title="Transporte de carga en general"  /></a></h3>			<!-- InfoCard -->
-					</div>
-
-							</div>
-					
-	<div class='fxb-col fxb-basis-auto'>
-
-						
-
-	<div class="separator site-header-separator visible-xs"></div>
-	<div class="fxb-row site-header-row site-header-top ">
-
-		<div class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-top-left'>
-								</div> 
-
-		<div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-top-right'>
-						<div class="sh-component zn_header_top_nav-wrapper "><span class="headernav-trigger js-toggle-class" data-target=".zn_header_top_nav-wrapper" data-target-class="is-opened"></span><ul id="menu-top-menu-1" class="zn_header_top_nav topnav topnav-no-sc clearfix">
-</ul></div>
-<ul class="sh-component social-icons sc--clean topnav navRight topnav-no-hdnav">
-	<li class="topnav-li social-icons-li">
-		<a
-		  href="#"
-		  class="social-icons-item fab fa-instagram"
-		  title="Instagram"
-		></a>
-		<span class="sr-only">Instagram</span>
-	</li>
-	<li class="topnav-li social-icons-li">
-		<a href="#" data-zniconfam="kl-social-icons" data-zn_icon="" target="_blank" class="topnav-item social-icons-item scheader-icon-" title="Facebook"></a>
-	</li>
-</ul>		</div>
-
-	</div><!-- /.site-header-top -->
-
-	<div class="separator site-header-separator visible-xs"></div>
-
-
-<div class="fxb-row site-header-row site-header-main ">
-
-	<div class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-main-left'>
-			</div>
-
-	<div class='fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto site-header-col-center site-header-main-center'>
-			</div>
-
-	<div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-main-right'>
-
-		<div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-main-right-top'>
-								<div class="sh-component main-menu-wrapper" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" >
-
-					<div class="zn-res-menuwrapper">
-			<a href="#" class="zn-res-trigger zn-menuBurger zn-menuBurger--3--s zn-menuBurger--anim1 " id="zn-res-trigger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-		</div><!-- end responsive menu -->
-		<div id="main-menu" class="main-nav mainnav--sidepanel mainnav--active-uline mainnav--pointer-dash nav-mm--light zn_mega_wrapper "><ul id="menu-main-menu" class="main-menu main-menu-nav zn_mega_menu "><li id="menu-item-495" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-495  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="index.html" class=" main-menu-link main-menu-link-top"><span>INICIO</span></a></li>
-<li id="menu-item-497" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-497  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="empresa.html" class=" main-menu-link main-menu-link-top"><span>EMPRESA</span></a></li>
-<li id="menu-item-499" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-472 current_page_item menu-item-499 active  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="servicios.html" class=" main-menu-link main-menu-link-top"><span>SERVICIOS</span></a></li>
-<li id="menu-item-504" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-504  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="contacto.html" class=" main-menu-link main-menu-link-top"><span>CONTACTO</span></a></li>
-</ul></div>		</div>
-		<!-- end main_menu -->
-				</div>
-
-		
-	</div>
-
-</div><!-- /.site-header-main -->
-
-
-					</div>
-				</div>
-							</div><!-- /.siteheader-container -->
-		</div><!-- /.site-header-main-wrapper -->
-
-	</div><!-- /.site-header-wrapper -->
-	</header>
-<div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0"><div id="page_header" class="page-subheader maskcontainer--mask8 mask8s page-subheader--custom site-subheader-cst uh_zn_def_header_style eluidf5880113  psubhead-stheader--absolute sh-tcolor--light">
-
-    <div class="bgback"></div>
-
-    <div class="zn-bgSource "  ><div class="zn-bgSource-image" style="background-image:url(wp-content/uploads/2018/12/bann2.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll"></div><div class="zn-bgSource-overlay" style="background-color:rgba(29,31,64,0.8)"></div></div>
-    <div class="th-sparkles"></div>
-
-    <!-- DEFAULT HEADER STYLE -->
-    <div class="ph-content-wrap">
-        <div class="ph-content-v-center">
-            <div>
-                <div class="container">
-                    <div class="row">
-                                                <div class="col-sm-6">
-                            <ul vocab="http://schema.org/" typeof="BreadcrumbList" class="breadcrumbs fixclear bread-style--minimal"><li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://">Inicio</a></li><li>Servicios</li></ul>&nbsp;                            <div class="clearfix"></div>
-                        </div>
-                        
-                                                <div class="col-sm-6">
-                            <div class="subheader-titles">
-                                <h2 class="subheader-maintitle" itemprop="headline" >Servicios</h2>                            </div>
-                        </div>
-                                            </div>
-                    <!-- end row -->
+    <div id="page_wrapper">
+      <header
+        id="header"
+        class="site-header style4 header--no-stick headerstyle-xs--image_color sticky-resize headerstyle--image_color site-header--absolute nav-th--light siteheader-classic siteheader-classic-normal sheader-sh--light"
+      >
+        <div class="site-header-wrapper sticky-top-area">
+          <div
+            class="kl-top-header site-header-main-wrapper clearfix sh--light"
+          >
+            <div class="container siteheader-container header--oldstyles">
+              <div class="fxb-row fxb-row-col-sm">
+                <div
+                  class="fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto fxb-grow-0"
+                >
+                  <div
+                    id="logo-container"
+                    class="logo-container logosize--yes zn-original-logo"
+                  >
+                    <!-- Logo -->
+                    <h3 class="site-logo logo" id="logo">
+                      <a href="" class="site-logo-anch"
+                        ><img
+                          class="logo-img site-logo-img"
+                          src="Images/Mesa de trabajo 7POST2.png"
+                          alt="Transportes Rayval"
+                          title="Transporte de carga en general"
+                      /></a>
+                    </h3>
+                    <!-- InfoCard -->
+                  </div>
                 </div>
+
+                <div class="fxb-col fxb-basis-auto">
+                  <div class="separator site-header-separator visible-xs"></div>
+                  <div class="fxb-row site-header-row site-header-top">
+                    <div
+                      class="fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-top-left"
+                    ></div>
+
+                    <div
+                      class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-top-right"
+                    >
+                      <ul
+                        class="sh-component social-icons sc--clean topnav navRight topnav-no-hdnav"
+                      >
+                        <li class="topnav-li social-icons-li">
+                          <a
+                            href="#"
+                            class="social-icons-item fab fa-instagram"
+                            title="Instagram"
+                          ></a>
+                          <span class="sr-only">Instagram</span>
+                        </li>
+                        <li class="topnav-li social-icons-li">
+                          <a
+                            href="#"
+                            data-zniconfam="kl-social-icons"
+                            data-zn_icon=""
+                            target="_blank"
+                            class="topnav-item social-icons-item scheader-icon-"
+                            title="Facebook"
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /.site-header-top -->
+
+                  <div class="separator site-header-separator visible-xs"></div>
+
+                  <div class="fxb-row site-header-row site-header-main">
+                    <div
+                      class="fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-main-left"
+                    ></div>
+
+                    <div
+                      class="fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto site-header-col-center site-header-main-center"
+                    ></div>
+
+                    <div
+                      class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-main-right"
+                    >
+                      <div
+                        class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-main-right-top"
+                      >
+                        <div
+                          class="sh-component main-menu-wrapper"
+                          role="navigation"
+                          itemscope="itemscope"
+                          itemtype="https://schema.org/SiteNavigationElement"
+                        >
+                          <div class="zn-res-menuwrapper">
+                            <a
+                              href="#"
+                              class="zn-res-trigger zn-menuBurger zn-menuBurger--3--s zn-menuBurger--anim1"
+                              id="zn-res-trigger"
+                            >
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </a>
+                          </div>
+                          <!-- end responsive menu -->
+                          <div
+                            id="main-menu"
+                            class="main-nav mainnav--sidepanel mainnav--active-uline mainnav--pointer-dash nav-mm--light zn_mega_wrapper"
+                          >
+                            <ul
+                              id="menu-main-menu"
+                              class="main-menu main-menu-nav zn_mega_menu"
+                            >
+                              <li
+                                id="menu-item-495"
+                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-495 main-menu-item-top menu-item-even menu-item-depth-0"
+                              >
+                                <a
+                                  href="index.html"
+                                  class="main-menu-link main-menu-link-top"
+                                  ><span>INICIO</span></a
+                                >
+                              </li>
+                              <li
+                                id="menu-item-497"
+                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-497 main-menu-item-top menu-item-even menu-item-depth-0"
+                              >
+                                <a
+                                  href="empresa.html"
+                                  class="main-menu-link main-menu-link-top"
+                                  ><span>EMPRESA</span></a
+                                >
+                              </li>
+                              <li
+                                id="menu-item-499"
+                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-472 current_page_item menu-item-499 active main-menu-item-top menu-item-even menu-item-depth-0"
+                              >
+                                <a
+                                  href="servicios.html"
+                                  class="main-menu-link main-menu-link-top"
+                                  ><span>SERVICIOS</span></a
+                                >
+                              </li>
+                              <li
+                                id="menu-item-504"
+                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-504 main-menu-item-top menu-item-even menu-item-depth-0"
+                              >
+                                <a
+                                  href="contacto.html"
+                                  class="main-menu-link main-menu-link-top"
+                                  ><span>CONTACTO</span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- end main_menu -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.site-header-main -->
+                </div>
+              </div>
             </div>
+            <!-- /.siteheader-container -->
+          </div>
+          <!-- /.site-header-main-wrapper -->
         </div>
-    </div>
-    <div class="kl-mask kl-bottommask kl-mask--mask8 mask8s kl-mask--light"><svg class="svgmask" width="2700px" height="57px" viewBox="0 0 2700 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <polygon fill="#fff"  class="bmask-bgfill" points="0 57 0 0 1350 55.5 2700 0 2700 57"></polygon>
-</svg>
-
-</div></div>
-		<section class="zn_section eluidea94722b     section-sidemargins    section--no " id="eluidea94722b"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluidee93c002            col-md-6 col-sm-6   znColumnElement"  id="eluidee93c002" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidee93c002 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluid9826cffe " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2018/12/FOTO-6.jpg"   alt=""  title="FOTO-6" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluida3cc0e36            col-md-6 col-sm-6   znColumnElement"  id="eluida3cc0e36" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluida3cc0e36 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid9e5601c8 " ><h3 class="tbk__title" itemprop="headline" >SERVICIO DE MONITOREO</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify">Todas nuestras unidades cuentan con el sistema de GPS para el reporte en tiempo real de la carga del cliente. Nuestra central de monítoreo se encargará de realizar el seguimiento adecuado y la entrega de informes correspondiente</p></p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-				<section class="zn_section eluide3c04a75     section-sidemargins    section--no " id="eluide3c04a75"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluidd14f678e            col-md-6 col-sm-6   znColumnElement"  id="eluidd14f678e" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidd14f678e znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluida3b1c94d " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2019/01/FOTO-31.jpg"   alt=""  title="FOTO-31" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluid3a8c07ca            col-md-6 col-sm-6   znColumnElement"  id="eluid3a8c07ca" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid3a8c07ca znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid7bea9a58 " ><h3 class="tbk__title" itemprop="headline" >SERVICIO DE ESCOLTA</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify">Contamos con vehículos que cumplen la función de “escolta” y un sistema de comunicación y control eficiente que nos permite brindarles información en tiempo real sobre el estatus de su mercadería, minimizando la probabilidad de incidentes de pérdida.</p></p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-				<section class="zn_section eluid560cfc2c     section-sidemargins    section--no " id="eluid560cfc2c"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluidf65b5e86            col-md-6 col-sm-6   znColumnElement"  id="eluidf65b5e86" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidf65b5e86 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluidee9c81a9 " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2018/12/FOTO-51.jpg"   alt=""  title="FOTO-51" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluide4d4b808            col-md-6 col-sm-6   znColumnElement"  id="eluide4d4b808" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluide4d4b808 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid7af3cb06 " ><h3 class="tbk__title" itemprop="headline" >TRANSPORTES DE CARGA LIVIANA</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify">Trabajamos con vehículos totalmente equipados de 2. 3 y 5 toneladas, de tipo plataforma, baranda y furgón, ideales para el transporte de carga liviana. Contamos con una moderna flota, la cual nos permite ajustarnos a sus requerimientos, garantizando la entrega de sus productos en buen estado, en el tiempo acordado y optimizando costos.</p>
-</p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-				<section class="zn_section eluid2bd28b6b     section-sidemargins    section--no " id="eluid2bd28b6b"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluidf24539f6            col-md-6 col-sm-6   znColumnElement"  id="eluidf24539f6" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidf24539f6 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluid28b5ca3a " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2019/01/oto-carro.jpg"   alt=""  title="oto-carro" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluid842d7c07            col-md-6 col-sm-6   znColumnElement"  id="eluid842d7c07" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid842d7c07 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidc48ae697 " ><h3 class="tbk__title" itemprop="headline" >TRANSPORTES EN FURGONES</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify"> Contamos con una moderna flota de furgones, de diferentes medidas aptas para todo tipo de carga, nuestros furgones se encuentran adecuadamente acondicionados para poder transportar sus mercancías en perfecto estado.</p></p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-				<section class="zn_section eluid407842b2     section-sidemargins    section--no " id="eluid407842b2"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluid8afc0cb7            col-md-6 col-sm-6   znColumnElement"  id="eluid8afc0cb7" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid8afc0cb7 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluidc9d05cb6 " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2019/01/FOTO-11.jpg"   alt=""  title="FOTO-11" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluida97c0854            col-md-6 col-sm-6   znColumnElement"  id="eluida97c0854" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluida97c0854 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid2547fa3b " ><h3 class="tbk__title" itemprop="headline" >TRANSPORTES DE CARGA PESADA</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify">Nos especializamos en el transporte de todo tipo de mercancías, materiales, maquinarias y equipos diversos, nos encargamos de transportarlas de manera local o al interior del país. Contamos con una moderna flota, la cual nos permite ajustarnos a sus requerimientos, garantizar la entrega de sus productos en buen estado, en el tiempo acordado y optimizar costos.</p></p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-				<section class="zn_section eluid934e995f     section-sidemargins    section--no " id="eluid934e995f"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluid4d72b1d4            col-md-6 col-sm-6   znColumnElement"  id="eluid4d72b1d4" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid4d72b1d4 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluid47df64e1 " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2018/12/FOTO-2jpg.jpg"   alt=""  title="FOTO-2jpg" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluid4ffbe5e7            col-md-6 col-sm-6   znColumnElement"  id="eluid4ffbe5e7" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid4ffbe5e7 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid99cc5fb0 " ><h3 class="tbk__title" itemprop="headline" >TRANSPORTES DE MATERIALES PELIGROSOS</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify">Contamos con amplia experiencia en el manejo de cargas peligrosas de todo tipo: explosiva, química, inflamable, etc. Manejamos nuestros procesos en base a las más rigurosas normas de seguridad internacional, con el fin de garantizar el traslado adecuado de los materiales y garantizando la seguridad del entorno que los rodea.</p></p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-				<section class="zn_section eluid9c27ac57     section-sidemargins    section--no " id="eluid9c27ac57"  >
-
-			
-			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-
-				<div class="row ">
-					
-		<div class="eluidb544f380            col-md-6 col-sm-6   znColumnElement"  id="eluidb544f380" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidb544f380 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="image-boxes imgbox-simple eluid1ab43412 " ><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="wp-content/uploads/2019/01/tdaga1.jpg"   alt=""  title="1" /></div></div></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluidcd4e7c6a            col-md-6 col-sm-6   znColumnElement"  id="eluidcd4e7c6a" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidcd4e7c6a znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidfcb04f3d " ><h3 class="tbk__title" itemprop="headline" >TURISMO Y CORPORATIVO</h3><p class="tbk__subtitle" itemprop="alternativeHeadline" ><P ALIGN="justify">En Transportes Rayval Valdivieso S.A.C. encontrará  la solución ideal a sus necesidades de transporte corporativo y turístico, contamos con una moderna flota, la cual se encuentra acondicionada para cumplir o superar las expectativas de nuestros clientes.</p></p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-		</div><div class="znpb-footer-smart-area" >		<section class="zn_section eluid608aea1b     section-sidemargins    section--no element-scheme--light" id="footer-main"  >
-
-			
-			<div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--bottom ">
-
-				<div class="row ">
-					
-		<div class="eluid25f03e97            col-md-4 col-sm-4   znColumnElement"  id="eluid25f03e97" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid25f03e97 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--right text-right tbk-symbol--  tbk-icon-pos--after-title eluidad2cd202 " ><p class="tbk__subtitle" itemprop="alternativeHeadline" > </p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluid7ff9bbcb            col-md-4 col-sm-4   znColumnElement"  id="eluid7ff9bbcb" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluid7ff9bbcb znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">				
-						<div class="kl-title-block clearfix tbk--text- tbk--right text-right tbk-symbol--  tbk-icon-pos--after-title eluidd527aab0 " ><p class="tbk__subtitle" itemprop="alternativeHeadline" >Todos los derechos reservados por Transporte Rayval</p></div>				</div>
-			</div>
-
-			
-		</div>
-	
-		<div class="eluidd7f77414            col-md-4 col-sm-4   znColumnElement" data-anim-delay="700ms" id="eluidd7f77414" >
-
-			
-			<div class="znColumnElement-innerWrapper-eluidd7f77414 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
-
-				<div class="znColumnElement-innerContent">					<div class="elm-socialicons eluidbd3c2183  text-left sc-icon--left elm-socialicons--light element-scheme--light" ><ul class="elm-social-icons sc--custom sh--square sc-lay--normal clearfix"><li class="elm-social-icons-item"><a href="#"  class="elm-sc-link elm-sc-icon-0"  target="_self"  itemprop="url" ><span class="elm-sc-icon " data-zniconfam="kl-social-icons" data-zn_icon=""></span></a><div class="clearfix"></div></li><li class="elm-social-icons-item"><a href="#"  class="elm-sc-link elm-sc-icon-1"  target="_self"  itemprop="url" ><span class="elm-sc-icon " data-zniconfam="kl-social-icons" data-zn_icon=""></span></a><div class="clearfix"></div></li><li class="elm-social-icons-item"><a href="#"  class="elm-sc-link elm-sc-icon-2"  target="_self"  itemprop="url" ><span class="elm-sc-icon " data-zniconfam="kl-social-icons" data-zn_icon=""></span></a><div class="clearfix"></div></li><li class="elm-social-icons-item"><a href="#"  class="elm-sc-link elm-sc-icon-3"  target="_self"  itemprop="url" ><span class="elm-sc-icon " data-zniconfam="kl-social-icons" data-zn_icon=""></span></a><div class="clearfix"></div></li></ul></div>				</div>
-			</div>
-
-			
-		</div>
-	
-				</div>
-			</div>
-
-					</section>
-
-
-		</div></div><!-- end page_wrapper -->
-
-<a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">SUBIR</a>
-
-<script type='text/javascript' src='wp-content/plugins/instashow-lite/assets/instashow-lite/dist/jquery.instashow-lite.packaged.js?ver=1.4.2'></script>
-
-			            <div class="wlwl-overlay"></div>
-			                <div class="lucky_wheel_content ">
-                <div class="wheel-content-wrapper">
-                    <div class="wheel_content_left">
-                        <div class="wheel_spin">
-                            <canvas id="wlwl_canvas">
-                            </canvas>
-                            <canvas id="wlwl_canvas1" class="">
-                            </canvas>
-                            <canvas id="wlwl_canvas2">
-                            </canvas>
-                            <div class="wheel_spin_container">
-                                <div class="wlwl_pointer_before"></div>
-                                <div class="wlwl_pointer_content">
-                                    <i class="wlwl-location wlwl_pointer "></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wheel_content_right">
-
-                        <div class="wheel_description">
-							<h2><span style="color: #ffffff;">SPIN TO WIN!</span></h2>
-<ul>
- 	<li><em><span style="color: #dbdbdb;">Try your lucky to get discount coupon</span></em></li>
- 	<li><em><span style="color: #dbdbdb;">1 spin per email</span></em></li>
- 	<li><em><span style="color: #dbdbdb;">No cheating</span></em></li>
-</ul>                        </div>
-                        <div class="wlwl_user_lucky">
-                            <label class="wlwl_field_name_wrap">
-                                <input type="text" class="wlwl_field_input wlwl_field_name" name="wlwl_player_name"
-                                       placeholder="Please enter your name"
-                                       id="wlwl_player_name">
-                            </label>
-                            <label>
-                                <span id="error_mail"></span>
-                                <input type="mail" class="wlwl_field_input wlwl_field_email" name="wlwl_player_mail"
-                                       placeholder="Please enter your email"
-                                       id="wlwl_player_mail">
-                            </label>
-                            <span class="wlwl_chek_mail wlwl_spin_button button-primary" id="wlwl_chek_mail">
-							Try Your Lucky                            </span>
-							                        </div>
-
-
+        <!-- /.site-header-wrapper -->
+      </header>
+      <div
+        class="zn_pb_wrapper clearfix zn_sortable_content"
+        data-droplevel="0"
+      >
+        <div
+          id="page_header"
+          class="page-subheader maskcontainer--mask8 mask8s page-subheader--custom site-subheader-cst uh_zn_def_header_style eluidf5880113 psubhead-stheader--absolute sh-tcolor--light"
+        >
+          <div class="bgback"></div>
+
+          <div class="zn-bgSource">
+            <div
+              class="zn-bgSource-image"
+              style="
+                background-image: url(Images/Mesa\ de\ trabajo\ 9POST5.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-attachment: scroll;
+              "
+            ></div>
+            <div
+              class="zn-bgSource-overlay"
+              style="background-color: rgba(29, 31, 64, 0.8)"
+            ></div>
+          </div>
+          <div class="th-sparkles"></div>
+
+          <!-- DEFAULT HEADER STYLE -->
+          <div class="ph-content-wrap">
+            <div class="ph-content-v-center">
+              <div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul
+                        vocab="http://schema.org/"
+                        typeof="BreadcrumbList"
+                        class="breadcrumbs fixclear bread-style--minimal"
+                      >
+                        <li property="itemListElement" typeof="ListItem">
+                          <a property="item" typeof="WebPage" href="https://"
+                            >Inicio</a
+                          >
+                        </li>
+                        <li>Servicios</li>
+                      </ul>
+                      &nbsp;
+                      <div class="clearfix"></div>
                     </div>
 
+                    <div class="col-sm-6">
+                      <div class="subheader-titles">
+                        <h2 class="subheader-maintitle" itemprop="headline">
+                          Servicios
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end row -->
                 </div>
-				                <div class="wlwl-close-wheel"><span class="wlwl-cancel"></span></div>
-				            <div class="hide-after-spin"><span class="wlwl-cancel"></span></div>
+              </div>
             </div>
-            <canvas id="wlwl_popup_canvas" class="wheel_icon woo-lucky-wheel-popup-icon"
-                    style="border-radius: 50%;" width="64"
-					height="64"
-					hidden></canvas>
-				<script type="text/javascript">
-		var c = document.body.className;
-		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-		document.body.className = c;
-	</script>
-	<script type='text/javascript' src='wp-content/plugins/event-calendar-wd/js/ecwd_popup.js?ver=1.1.23_5c0ac1665ab44'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
-<script type='text/javascript' src='wp-includes/js/masonry.min.js?ver=3.3.2'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var ecwd = {"ajaxurl":"https:\/\/\/wp-admin\/admin-ajax.php","ajaxnonce":"62dd688d10","loadingText":"Cargando\u2026","event_popup_title_text":"Detalles del evento","plugin_url":"https:\/\/\/wp-content\/plugins\/event-calendar-wd","gmap_key":"","gmap_style":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/event-calendar-wd/js/scripts.js?ver=1.1.23_5c0ac1665ab44'></script>
-<script type='text/javascript' src='wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.14-6684'></script>
-<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
-<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.5.2'></script>
-<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
-<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.5.2'></script>
-<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.5.2'></script>
-<script type='text/javascript' src='wp-content/plugins/yith-infinite-scrolling/assets/js/yith.infinitescroll.min.js?ver=1.1.3'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var yith_infs = {"navSelector":"nav.navigation","nextSelector":"nav.navigation a.next","itemSelector":"article.post","contentSelector":"#main","loader":"https:\/\/\/wp-content\/plugins\/yith-infinite-scrolling\/assets\/images\/loader.gif","shop":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/yith-infinite-scrolling/assets/js/yith-infs.min.js?ver=1.1.3'></script>
-<script type='text/javascript' src='wp-includes/js/underscore.min.js?ver=1.8.3'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-includes/js/wp-util.min.js?ver=5.2.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var woo_variation_swatches_options = {"is_product_page":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.0.49'></script>
-<script type='text/javascript' src='wp-content/themes/kallyas/js/plugins.min.js?ver=4.16.7'></script>
-<script type='text/javascript' src='wp-content/themes/kallyas/addons/scrollmagic/scrollmagic.js?ver=4.16.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var zn_do_login = {"ajaxurl":"\/wp-admin\/admin-ajax.php","add_to_cart_text":"\u00a1Producto a\u00f1adido al carrito!"};
-var ZnThemeAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php","zn_back_text":"Back","zn_color_theme":"light","res_menu_trigger":"992","top_offset_tolerance":"","logout_url":"https:\/\/\/wp-login.php?action=logout&redirect_to=https%3A%2F%2F&_wpnonce=23419b12cb"};
-var ZnSmoothScroll = {"type":"0.25","touchpadSupport":"no"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/themes/kallyas/addons/smooth_scroll/SmoothScroll.min.js?ver=4.16.7'></script>
-<script type='text/javascript' src='wp-content/themes/kallyas/addons/slick/slick.min.js?ver=4.16.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var ZionBuilderFrontend = {"allow_video_on_mobile":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/themes/kallyas/framework/zion-builder/dist/znpb_frontend.bundle.js?ver=1.0.22'></script>
-<script type='text/javascript' src='wp-includes/js/wp-embed.min.js?ver=5.2.7'></script>
-<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
+          </div>
+          <div
+            class="kl-mask kl-bottommask kl-mask--mask8 mask8s kl-mask--light"
+          >
+            <svg
+              class="svgmask"
+              width="2700px"
+              height="57px"
+              viewBox="0 0 2700 57"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <polygon
+                fill="#fff"
+                class="bmask-bgfill"
+                points="0 57 0 0 1350 55.5 2700 0 2700 57"
+              ></polygon>
+            </svg>
+          </div>
+        </div>
+        <section
+          class="zn_section eluidea94722b section-sidemargins section--no"
+        >
+          <div
+            class="eluida3cc0e36 col-md-12 znColumnElement"
+            id="eluida3cc0e36"
+          >
+            <div
+              class="znColumnElement-innerWrapper-eluida3cc0e36 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center"
+            >
+              <div class="znColumnElement-innerContent">
+                <div
+                  class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol-- tbk-icon-pos--after-title eluid9e5601c8"
+                >
+                  <h1
+                    class=""
+                    itemprop="headline"
+                    style="color: #002c4f; font-size: 36px"
+                  >
+                    FURGONES
+                  </h1>
+                  <p class="tbk__subtitle" itemprop="alternativeHeadline"></p>
+                  <h3 class="text-center">
+                    Contamos con furgones (baranda) especializado en el
+                    transporte de diferentes tipos de mercaderías ,<br />
+                    asegurando una total seguridad y profesionalismo en el viaje
+                  </h3>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="zn_section eluidea94722b section-sidemargins section--no"
+          id="eluidea94722b"
+        >
+          <div
+            class="zn_section_size container zn-section-height--auto zn-section-content_algn--top"
+          >
+            <div class="row">
+              <div
+                class="eluidee93c002 col-md-6 znColumnElement"
+                id="eluidee93c002"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluidee93c002 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div class="image-boxes imgbox-simple eluid9826cffe">
+                      <div class="image-boxes-holder imgboxes-wrapper u-mb-0">
+                        <div class="image-boxes-img-wrapper img-align-center">
+                          <img
+                            class="image-boxes-img img-responsive"
+                            src="Images/servicio1.png"
+                            alt=""
+                            title="FOTO-6"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="eluida3cc0e36 col-md-6 znColumnElement"
+                id="eluida3cc0e36"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluida3cc0e36 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div
+                      class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol-- tbk-icon-pos--after-title eluid9e5601c8"
+                    >
+                      <h3
+                        itemprop="headline"
+                        style="color: #002c4f; font-size: 36px"
+                      >
+                        EN TRANSRAYVAL
+                      </h3>
+                      <p
+                        class="tbk__subtitle"
+                        itemprop="alternativeHeadline"
+                      ></p>
+                      <h3 align="justify">
+                        Brindamos un servicio de eficiencia en la coordinación
+                        de todos nuestros servicios, teniendo como consigna de
+                        realizar la entrega en el lugar que se requiera y
+                        necesite, óptimas condiciones y el tiempo acordado.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <symbol id="icon-znb_close-thin" viewBox="0 0 100 100">
-   <path d="m87.801 12.801c-1-1-2.6016-1-3.5 0l-33.801 33.699-34.699-34.801c-1-1-2.6016-1-3.5 0-1 1-1 2.6016 0 3.5l34.699 34.801-34.801 34.801c-1 1-1 2.6016 0 3.5 0.5 0.5 1.1016 0.69922 1.8008 0.69922s1.3008-0.19922 1.8008-0.69922l34.801-34.801 33.699 33.699c0.5 0.5 1.1016 0.69922 1.8008 0.69922 0.69922 0 1.3008-0.19922 1.8008-0.69922 1-1 1-2.6016 0-3.5l-33.801-33.699 33.699-33.699c0.89844-1 0.89844-2.6016 0-3.5z"/>
-  </symbol>
+        <section
+          class="zn_section eluid934e995f section-sidemargins section--no"
+          id="eluid934e995f"
+        >
+          <div
+            class="zn_section_size container zn-section-height--auto zn-section-content_algn--top"
+          >
+            <div class="row">
+              <div
+                class="eluid4d72b1d4 col-md-6 znColumnElement"
+                id="eluid4d72b1d4"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluid4d72b1d4 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div class="image-boxes imgbox-simple eluid47df64e1">
+                      <div class="image-boxes-holder imgboxes-wrapper u-mb-0">
+                        <div class="image-boxes-img-wrapper img-align-center">
+                          <img
+                            class="image-boxes-img img-responsive"
+                            src="Images/servicio2.jpg"
+                            alt=""
+                            title="FOTO-2jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div
+                class="eluid4ffbe5e7 col-md-6 znColumnElement"
+                id="eluid4ffbe5e7"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluid4ffbe5e7 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div
+                      class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol-- tbk-icon-pos--after-title eluid99cc5fb0"
+                    >
+                      <h3
+                        itemprop="headline"
+                        style="color: #002c4f; font-size: 36px"
+                      >
+                        TRANSPORTE DE CARGA LIVIANA
+                      </h3>
+                      <p
+                        class="tbk__subtitle"
+                        itemprop="alternativeHeadline"
+                      ></p>
+                      <h3 align="justify">
+                        Trabajamos con vehículos de 2, 3, 4 y 5 especializados
+                        en el transporte de carga liviana. Ofrecemos una flota
+                        que se posiciona a la vanguardia de la tecnología lo
+                        cual asegura poder ajustarnos a sus requerimientos, y
+                        brindamos una entrega de sus productos en buen estado
+                        *con una puntualidad exacta.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="znpb-footer-smart-area">
+        <section
+          class="zn_section eluid608aea1b section-sidemargins section--no element-scheme--light"
+          id="footer-main"
+        >
+          <div
+            class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--bottom"
+          >
+            <div class="row">
+              <div
+                class="eluid25f03e97 col-md-4 col-sm-4 znColumnElement"
+                id="eluid25f03e97"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluid25f03e97 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div
+                      class="kl-title-block clearfix tbk--text- tbk--right text-right tbk-symbol-- tbk-icon-pos--after-title eluidad2cd202"
+                    >
+                      <p
+                        class="tbk__subtitle"
+                        itemprop="alternativeHeadline"
+                      ></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-  <symbol id="icon-znb_play" viewBox="0 0 22 28">
-   <path d="M21.625 14.484l-20.75 11.531c-0.484 0.266-0.875 0.031-0.875-0.516v-23c0-0.547 0.391-0.781 0.875-0.516l20.75 11.531c0.484 0.266 0.484 0.703 0 0.969z"></path>
-  </symbol>
+              <div
+                class="eluid7ff9bbcb col-md-4 col-sm-4 znColumnElement"
+                id="eluid7ff9bbcb"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluid7ff9bbcb znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div
+                      class="kl-title-block clearfix tbk--text- tbk--right text-right tbk-symbol-- tbk-icon-pos--after-title eluidd527aab0"
+                    >
+                      <p class="tbk__subtitle" itemprop="alternativeHeadline">
+                        Todos los derechos reservados por Transporte Rayval
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
- </defs>
-</svg>
-</body>
+              <div
+                class="eluidd7f77414 col-md-4 col-sm-4 znColumnElement"
+                data-anim-delay="700ms"
+                id="eluidd7f77414"
+              >
+                <div
+                  class="znColumnElement-innerWrapper-eluidd7f77414 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left"
+                >
+                  <div class="znColumnElement-innerContent">
+                    <div
+                      class="elm-socialicons eluidbd3c2183 text-left sc-icon--left elm-socialicons--light element-scheme--light"
+                    >
+                      <ul
+                        class="elm-social-icons sc--custom sh--square sc-lay--normal clearfix"
+                      >
+                        <li class="elm-social-icons-item">
+                          <a
+                            href="#"
+                            class="elm-sc-link elm-sc-icon-0"
+                            target="_self"
+                            itemprop="url"
+                            ><span
+                              class="elm-sc-icon"
+                              data-zniconfam="kl-social-icons"
+                              data-zn_icon=""
+                            ></span
+                          ></a>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="elm-social-icons-item">
+                          <a
+                            href="#"
+                            class="elm-sc-link elm-sc-icon-1"
+                            target="_self"
+                            itemprop="url"
+                            ><span
+                              class="elm-sc-icon"
+                              data-zniconfam="kl-social-icons"
+                              data-zn_icon=""
+                            ></span
+                          ></a>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="elm-social-icons-item">
+                          <a
+                            href="#"
+                            class="elm-sc-link elm-sc-icon-2"
+                            target="_self"
+                            itemprop="url"
+                            ><span
+                              class="elm-sc-icon"
+                              data-zniconfam="kl-social-icons"
+                              data-zn_icon=""
+                            ></span
+                          ></a>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="elm-social-icons-item">
+                          <a
+                            href="#"
+                            class="elm-sc-link elm-sc-icon-3"
+                            target="_self"
+                            itemprop="url"
+                            ><span
+                              class="elm-sc-icon"
+                              data-zniconfam="kl-social-icons"
+                              data-zn_icon=""
+                            ></span
+                          ></a>
+                          <div class="clearfix"></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- end page_wrapper -->
+
+    <a
+      href="#"
+      id="totop"
+      class="u-trans-all-2s js-scroll-event"
+      data-forch="300"
+      data-visibleclass="on--totop"
+      >SUBIR</a
+    >
+
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/instashow-lite/assets/instashow-lite/dist/jquery.instashow-lite.packaged.js?ver=1.4.2"
+    ></script>
+
+    <div class="wlwl-overlay"></div>
+    <div class="lucky_wheel_content">
+      <div class="wheel-content-wrapper">
+        <div class="wheel_content_left">
+          <div class="wheel_spin">
+            <canvas id="wlwl_canvas"> </canvas>
+            <canvas id="wlwl_canvas1" class=""> </canvas>
+            <canvas id="wlwl_canvas2"> </canvas>
+            <div class="wheel_spin_container">
+              <div class="wlwl_pointer_before"></div>
+              <div class="wlwl_pointer_content">
+                <i class="wlwl-location wlwl_pointer"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wheel_content_right">
+          <div class="wheel_description">
+            <h2><span style="color: #ffffff">SPIN TO WIN!</span></h2>
+            <ul>
+              <li>
+                <em
+                  ><span style="color: #dbdbdb"
+                    >Try your lucky to get discount coupon</span
+                  ></em
+                >
+              </li>
+              <li>
+                <em><span style="color: #dbdbdb">1 spin per email</span></em>
+              </li>
+              <li>
+                <em><span style="color: #dbdbdb">No cheating</span></em>
+              </li>
+            </ul>
+          </div>
+          <div class="wlwl_user_lucky">
+            <label class="wlwl_field_name_wrap">
+              <input
+                type="text"
+                class="wlwl_field_input wlwl_field_name"
+                name="wlwl_player_name"
+                placeholder="Please enter your name"
+                id="wlwl_player_name"
+              />
+            </label>
+            <label>
+              <span id="error_mail"></span>
+              <input
+                type="mail"
+                class="wlwl_field_input wlwl_field_email"
+                name="wlwl_player_mail"
+                placeholder="Please enter your email"
+                id="wlwl_player_mail"
+              />
+            </label>
+            <span
+              class="wlwl_chek_mail wlwl_spin_button button-primary"
+              id="wlwl_chek_mail"
+            >
+              Try Your Lucky
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="wlwl-close-wheel"><span class="wlwl-cancel"></span></div>
+      <div class="hide-after-spin"><span class="wlwl-cancel"></span></div>
+    </div>
+    <canvas
+      id="wlwl_popup_canvas"
+      class="wheel_icon woo-lucky-wheel-popup-icon"
+      style="border-radius: 50%"
+      width="64"
+      height="64"
+      hidden
+    ></canvas>
+    <script type="text/javascript">
+      var c = document.body.className;
+      c = c.replace(/woocommerce-no-js/, "woocommerce-js");
+      document.body.className = c;
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/event-calendar-wd/js/ecwd_popup.js?ver=1.1.23_5c0ac1665ab44"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/imagesloaded.min.js?ver=3.2.0"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/masonry.min.js?ver=3.3.2"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var ecwd = {
+        ajaxurl: "https:\/\/\/wp-admin\/admin-ajax.php",
+        ajaxnonce: "62dd688d10",
+        loadingText: "Cargando\u2026",
+        event_popup_title_text: "Detalles del evento",
+        plugin_url: "https:\/\/\/wp-content\/plugins\/event-calendar-wd",
+        gmap_key: "",
+        gmap_style: "",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/event-calendar-wd/js/scripts.js?ver=1.1.23_5c0ac1665ab44"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.14-6684"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.5.2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.5.2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.5.2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/yith-infinite-scrolling/assets/js/yith.infinitescroll.min.js?ver=1.1.3"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var yith_infs = {
+        navSelector: "nav.navigation",
+        nextSelector: "nav.navigation a.next",
+        itemSelector: "article.post",
+        contentSelector: "#main",
+        loader:
+          "https:\/\/\/wp-content\/plugins\/yith-infinite-scrolling\/assets\/images\/loader.gif",
+        shop: "",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/yith-infinite-scrolling/assets/js/yith-infs.min.js?ver=1.1.3"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/underscore.min.js?ver=1.8.3"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var _wpUtilSettings = { ajax: { url: "\/wp-admin\/admin-ajax.php" } };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/wp-util.min.js?ver=5.2.7"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var woo_variation_swatches_options = { is_product_page: "" };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.0.49"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/kallyas/js/plugins.min.js?ver=4.16.7"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/kallyas/addons/scrollmagic/scrollmagic.js?ver=4.16.7"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var zn_do_login = {
+        ajaxurl: "\/wp-admin\/admin-ajax.php",
+        add_to_cart_text: "\u00a1Producto a\u00f1adido al carrito!",
+      };
+      var ZnThemeAjax = {
+        ajaxurl: "\/wp-admin\/admin-ajax.php",
+        zn_back_text: "Back",
+        zn_color_theme: "light",
+        res_menu_trigger: "992",
+        top_offset_tolerance: "",
+        logout_url:
+          "https:\/\/\/wp-login.php?action=logout&redirect_to=https%3A%2F%2F&_wpnonce=23419b12cb",
+      };
+      var ZnSmoothScroll = { type: "0.25", touchpadSupport: "no" };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/kallyas/addons/smooth_scroll/SmoothScroll.min.js?ver=4.16.7"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/kallyas/addons/slick/slick.min.js?ver=4.16.7"
+    ></script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var ZionBuilderFrontend = { allow_video_on_mobile: "" };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="wp-content/themes/kallyas/framework/zion-builder/dist/znpb_frontend.bundle.js?ver=1.0.22"
+    ></script>
+    <script
+      type="text/javascript"
+      src="wp-includes/js/wp-embed.min.js?ver=5.2.7"
+    ></script>
+    <svg
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-znb_close-thin" viewBox="0 0 100 100">
+          <path
+            d="m87.801 12.801c-1-1-2.6016-1-3.5 0l-33.801 33.699-34.699-34.801c-1-1-2.6016-1-3.5 0-1 1-1 2.6016 0 3.5l34.699 34.801-34.801 34.801c-1 1-1 2.6016 0 3.5 0.5 0.5 1.1016 0.69922 1.8008 0.69922s1.3008-0.19922 1.8008-0.69922l34.801-34.801 33.699 33.699c0.5 0.5 1.1016 0.69922 1.8008 0.69922 0.69922 0 1.3008-0.19922 1.8008-0.69922 1-1 1-2.6016 0-3.5l-33.801-33.699 33.699-33.699c0.89844-1 0.89844-2.6016 0-3.5z"
+          />
+        </symbol>
+
+        <symbol id="icon-znb_play" viewBox="0 0 22 28">
+          <path
+            d="M21.625 14.484l-20.75 11.531c-0.484 0.266-0.875 0.031-0.875-0.516v-23c0-0.547 0.391-0.781 0.875-0.516l20.75 11.531c0.484 0.266 0.484 0.703 0 0.969z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+  </body>
 </html>
